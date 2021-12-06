@@ -144,5 +144,27 @@ def main():
                     Patient9_  = Patient(patient9[0],patient9[1],patient9[2],patient9[3])
                     Patient10_ = Patient(patient10[0],patient10[1],patient10[2],patient10[3])
 
-  
+    
+                    # opening and reading  the Physicians csv file and put each Physician to a list
+                    with open("professor_work\physicians.csv") as pp:
+                        reader = csv.reader(pp)
+                        row = list(reader)
+                        physician1         = row[1]
+                        physician2         = row[2]
+                        physician3         = row[3]
+
+                                                #making a list to add all the physicians to the list then print them
+
+                        physicianss = []
+                        for rows in row:
+                            physicianss.append(rows)
+
+                    # defining an object of class Physician for each Physician from csv file by the lists that have been created
+
+                    Physician1_  = Physician(physician1[0],physician1[1],physician1[2])
+                    Physician2_ = Physician(physician2[0],physician2[1],physician2[2])
+                    Physician3_  = Physician(physician3[0],physician3[1],physician3[2])
+                  
+
+ 
     
