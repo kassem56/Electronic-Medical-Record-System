@@ -87,4 +87,16 @@ class Patient :
 
 
 
+ #making Encounter class by defining the slots and addding the attributes  
+class Encounter:
+    __slots__ = ['physician' , 'patient' ,'date', 'disease', 'medication']                      # adding the attributes to the slots
+
+    def __init__(self,physician, patient, date, disease, medication):
+        self.physician = physician
+        self.patient = patient
+        self.date = date
+        self.disease = disease
+        self.medication = medication
+
+
     
