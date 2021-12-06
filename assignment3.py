@@ -9,6 +9,13 @@ class Physician :
         self.__specialty = specialty
 
 
+    def set(self,id):                                                            # making function to give the abbility to change the private attribute
+         self.__id = id
+    def set(self,name):                                                          ## making function to give the abbility to change the private attribute
+         self.__name = name 
+    def set(self,specialty):                                                      # # making function to give the abbility to change the private attribute
+        self.__specialty = specialty
+
 
 
 
