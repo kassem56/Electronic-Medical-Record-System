@@ -187,7 +187,7 @@ def main():
 
 
 
-                # creating a new csv file and add the Encounters objects to the file 
+                # creating a new csv file and add the Encounters objects to the file .
                     with open("professor_work\Encounters.csv",'w') as E:
                         writer = csv.writer(E)
 
