@@ -166,5 +166,37 @@ def main():
                     Physician3_  = Physician(physician3[0],physician3[1],physician3[2])
                   
 
- 
+                  # defining an object of class Encounter for each Encounter by adding the specific attributes 
+                    #creating 5 objects for Encounter
+
+                    Encounter1 = Encounter(Physician1_,Patient1_,'27/3/2022','Anthrax','ciprofloxacin')
+                    Encounter2 = Encounter(Physician2_,Patient2_,'2/9/2022','Brucellosis','streptomycin')
+                    Encounter3 = Encounter(Physician2_,Patient3_,'4/3/2022','Anthrax','ciprofloxacin')
+                    Encounter4 = Encounter(Physician3_,Patient4_,'1/2/2022','Brucellosis','streptomycin')
+                    Encounter5 = Encounter(Physician1_,Patient5_,'1/13/2022','Anthrax','ciprofloxacin')
+                    
+
+                    objs=[] #list to store the objects for Encounter
+                    objs.append(Encounter1) #creating 5 objects for Encounter
+                    objs.append(Encounter2)
+                    objs.append(Encounter3)
+                    objs.append(Encounter4)
+                    objs.append(Encounter5)
+
+
+
+
+
+                # creating a new csv file and add the Encounters objects to the file 
+                    with open("professor_work\Encounters.csv",'w') as E:
+                        writer = csv.writer(E)
+
+                        # write the Encounters into the csv file :
+                        for item in objs:
+
+                            writer.writerow([item.patient,item.physician,item.date,item.disease,item.medication])
+
+                   #printing the patients   
+
+    
     
