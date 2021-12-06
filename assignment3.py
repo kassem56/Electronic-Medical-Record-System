@@ -19,6 +19,17 @@ class Physician :
 
 
 
+    
+    def get(self):                                                                # making a function to get the value of the private attribute
+        return self.__id
+    def get(self):                                                                  # making a function to get the value of the private attribute
+        return self.__name
+    def get(self):                                                                   # making a function to get the value of the private attribute
+       return self.__specialty
+
+
+
+
 
 
 
