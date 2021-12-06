@@ -39,6 +39,15 @@ class Physician :
 
 
 
+                                    #making Patient class by defining the slots and addding the attributes  
+class Patient :
+    __slots__ = ['__emr_id','__name','__gender','__phone_number']               # making the attributes private by adding double _  before the attribute
+    def __init__(self,emr_id,name,gender,phone_number):
+        self.__emr_id = emr_id
+        self.__name = name
+        self.__gender = gender 
+        self.__phone_number = phone_number
+    
 
     
 
