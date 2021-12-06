@@ -107,7 +107,7 @@ class Encounter:
 
 def main():
                                                     # opening and reading the csv file that contains the info of the patients and put each patient in a list
-            with open("professor_work\patients.csv") as pp: 
+            with open("patients.csv") as pp: 
                     reader = csv.reader(pp)
                     row = list(reader)
 
@@ -146,7 +146,7 @@ def main():
 
     
                     # opening and reading  the Physicians csv file and put each Physician to a list
-                    with open("professor_work\physicians.csv") as pp:
+                    with open("physicians.csv") as pp:
                         reader = csv.reader(pp)
                         row = list(reader)
                         physician1         = row[1]
@@ -188,7 +188,7 @@ def main():
 
 
                 # creating a new csv file and add the Encounters objects to the file 
-                    with open("professor_work\Encounters.csv",'w') as E:
+                    with open("Encounters.csv",'w') as E:
                         writer = csv.writer(E)
 
                         # write the Encounters into the csv file :
