@@ -187,7 +187,7 @@ def main():
 
 
 
-                # creating a new csv file and add the Encounters objects to the file .
+                # creating a new csv file and add the Encounters objects to the file 
                     with open("professor_work\Encounters.csv",'w') as E:
                         writer = csv.writer(E)
 
@@ -197,6 +197,30 @@ def main():
                             writer.writerow([item.patient,item.physician,item.date,item.disease,item.medication])
 
                    #printing the patients   
+
+            for i in patientss :
+                if i == patientss[0]:
+                    continue
+                else:    
+                    print(i)
+
+
+                    # printing the physicians
+
+            for i in physicianss:
+                if i == physicianss[0]:
+                    continue
+                else:
+                    print(i)
+
+                #printing the encounters
+
+            for encounter in objs:
+
+                print(encounter)
+  
+main()
+
 
     
     
