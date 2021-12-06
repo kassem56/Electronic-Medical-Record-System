@@ -98,5 +98,12 @@ class Encounter:
         self.disease = disease
         self.medication = medication
 
+    def __str__(self):
+        return '' + str(self.physician) + '  ' + str(self.patient) + '  ' +  str(self.date) + '  ' + str(self.disease) + '  ' + str(self.medication) + ''
+
+    def __repr__(self):
+                return self.physician , self.patient ,  self.date, self.disease , self.medication
+
+
 
     
