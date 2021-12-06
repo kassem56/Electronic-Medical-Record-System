@@ -48,6 +48,14 @@ class Patient :
         self.__gender = gender 
         self.__phone_number = phone_number
     
+    def set(self,emr_id):                                    # making function to give the abbility to change the private attribute
+         self.__emr_id= emr_id
+    def set(self,name):                                      # making function to give the abbility to change the private attribute
+         self.__name = name
+    def set(self,gender):                                        # making function to give the abbility to change the private attribute
+        self.__gender = gender
+    def set(self,phone_number):
+        self.__phone_number = phone_number
 
     
 
