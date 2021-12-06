@@ -28,7 +28,19 @@ class Physician :
        return self.__specialty
 
 
+    
 
+    def __str__(self):                                                                  # making special method (str) to set the sentence that will be zed when you print the object
+        return self.__name + ' is a '+  self.__specialty+ ' Physician with ID number ' +  self.__id  
+
+    def __repr__(self):                                                         # making special method (repr) to set the sentence that will be printed when you print the object if the (str) method doesn't exist
+        return 'Physician(id=' +self.__id + 'name=' + self.__name + '  specialty=' +  self.__specialty
+
+
+
+
+
+    
 
 
 
