@@ -63,3 +63,16 @@ class Patient :
 
 
 
+
+
+    def get(self):
+        return self.__emr_id
+    def get(self):
+        return self.__name
+    def get(self):
+       return self.__gender
+    def get(self):
+        return self.__phone_number
+
+
+    
