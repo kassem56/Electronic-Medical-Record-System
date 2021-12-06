@@ -75,4 +75,16 @@ class Patient :
         return self.__phone_number
 
 
+                                        # making special method (str) to set the sentence that will be printed when you print the object
+    def __str__(self):
+        return ' patient name: ' + self.__name + ' with EMR ID: ' + self.__emr_id + ' gender of patient: ' + self.__gender + ' phone number :' + self.__phone_number 
+
+
+
+                            # making special method (repr) to set the sentence that will be printed when you print the object if the (str) method doesn't exist
+    def __repr__(self):
+            return 'Patient(id= '+ self.__emr_id+ ' name= '+ self.__name + ' gender= ' + self.__gender + ' phone_number= ' + self.__phone_number
+
+
+
     
