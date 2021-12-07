@@ -124,10 +124,7 @@ def main():
 
                                         #making a list to add all the patients to the list then print them
 
-                    patientss= []
-                    for rows in row:
-                        patientss.append(rows)
-                    
+
                     
 
 
@@ -144,7 +141,20 @@ def main():
                     Patient9_  = Patient(patient9[0],patient9[1],patient9[2],patient9[3])
                     Patient10_ = Patient(patient10[0],patient10[1],patient10[2],patient10[3])
 
-    
+                    patientss= []
+            
+                    patientss.append(Patient1_)
+                    patientss.append(Patient2_)
+                    patientss.append(Patient3_)
+                    patientss.append(Patient4_)
+                    patientss.append(Patient5_)
+                    patientss.append(Patient6_)
+                    patientss.append(Patient7_)
+                    patientss.append(Patient8_)
+                    patientss.append(Patient9_)
+                    patientss.append(Patient10_)
+
+
                     # opening and reading  the Physicians csv file and put each Physician to a list
                     with open("physicians.csv") as pp:
                         reader = csv.reader(pp)
@@ -155,9 +165,7 @@ def main():
 
                                                 #making a list to add all the physicians to the list then print them
 
-                        physicianss = []
-                        for rows in row:
-                            physicianss.append(rows)
+                        
 
                     # defining an object of class Physician for each Physician from csv file by the lists that have been created
 
@@ -175,6 +183,14 @@ def main():
                     Encounter4 = Encounter(Physician3_,Patient4_,'1/2/2022','Brucellosis','streptomycin')
                     Encounter5 = Encounter(Physician1_,Patient5_,'1/13/2022','Anthrax','ciprofloxacin')
                     
+
+                    physicianss = []
+                       
+                    physicianss.append(Physician1_)
+                    physicianss.append(Physician2_)
+                    physicianss.append(Physician3_)
+
+
 
                     objs=[] #list to store the objects for Encounter
                     objs.append(Encounter1) #creating 5 objects for Encounter
@@ -199,18 +215,15 @@ def main():
                    #printing the patients   
 
             for i in patientss :
-                if i == patientss[0]:
-                    continue
-                else:    
+                
+    
                     print(i)
 
 
                     # printing the physicians
 
             for i in physicianss:
-                if i == physicianss[0]:
-                    continue
-                else:
+
                     print(i)
 
                 #printing the encounters
